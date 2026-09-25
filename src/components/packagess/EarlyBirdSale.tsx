@@ -203,9 +203,8 @@ function DestinationBadge({
     children: React.ReactNode;
 }) {
     return (
-        <div className="inline-flex h-[23px] items-center gap-[5px] rounded-[7px] bg-[#FFD83D] px-[10px] text-[9px] font-bold text-[#004B50] shadow-sm sm:h-[27px] sm:px-[12px] sm:text-[10px] lg:h-[30px] lg:gap-[6px] lg:px-[14px] lg:text-[11px]">
-            <Plane className="h-[11px] w-[11px] fill-[#004B50] sm:h-[13px] sm:w-[13px] lg:h-[14px] lg:w-[14px]" />
-
+        <div className="inline-flex h-[23px] items-center gap-[5px] rounded-[7px] bg-primary px-[10px] text-[9px] font-bold text-white shadow-sm sm:h-[27px] sm:px-[12px] sm:text-[10px] lg:h-[30px] lg:gap-[6px] lg:px-[14px] lg:text-[11px]">
+ 
             <span>{children}</span>
         </div>
     );
@@ -380,7 +379,7 @@ function FeaturedCard() {
 
                     <Link
                         href={packageRoute}
-                        className="flex h-[35px] items-center gap-[9px] rounded-full bg-[#FFD83D] px-[19px] text-[10px] font-bold text-[#004B50] transition-all duration-200 hover:bg-white sm:h-[42px] sm:gap-[10px] sm:px-[23px] sm:text-[12px] lg:h-[50px] lg:gap-[12px] lg:px-[30px] lg:text-[14px]"
+                        className="flex h-[35px] items-center gap-[9px] rounded-full bg-primary px-[19px] text-[10px] font-bold text-white transition-all duration-200 hover:bg-primary/90 sm:h-[42px] sm:gap-[10px] sm:px-[23px] sm:text-[12px] lg:h-[50px] lg:gap-[12px] lg:px-[30px] lg:text-[14px]"
                     >
                         Book Early
 
@@ -477,7 +476,7 @@ function SmallOfferCard({
                 </div>
 
                 {/* Location */}
-                <div className="ml-[9px] flex min-w-0 flex-1 items-center gap-[4px] text-[6px] text-[#527476] sm:ml-[12px] sm:gap-[5px] sm:text-[8px] lg:ml-[16px] lg:gap-[6px] lg:text-[9px]">
+                <div className="ml-[9px] flex min-w-0 flex-1 items-center gap-[4px] text-[6px] text-whitesm:ml-[12px] sm:gap-[5px] sm:text-[8px] lg:ml-[16px] lg:gap-[6px] lg:text-[9px]">
                     <MapPin className="h-[9px] w-[9px] shrink-0 text-[#00666A] sm:h-[11px] sm:w-[11px] lg:h-[13px] lg:w-[13px]" />
 
                     <span className="truncate">
@@ -488,7 +487,7 @@ function SmallOfferCard({
 
                 {/* Price */}
                 <div className="ml-[5px] shrink-0 sm:ml-[8px] lg:ml-[10px]">
-                    <p className="text-[6px] leading-[7px] text-[#679092] sm:text-[7px] sm:leading-[8px] lg:text-[8px] lg:leading-[9px]">
+                    <p className="text-[8px] leading-[7px] text-[#679092] sm:text-[7px] sm:leading-[8px] lg:text-[8px] lg:leading-[9px]">
                         Starting from
                     </p>
 
@@ -536,7 +535,7 @@ export default function EarlyBirdSale() {
                     <div className="flex w-full flex-col items-center justify-center py-8 lg:max-h-[350px] lg:py-0">
                         {/* Labels */}
                         <div className="flex items-center gap-2 whitespace-nowrap">
-                            <span className="flex h-[22px] items-center gap-[3px] rounded-full bg-[#FFD83D] px-[9px] text-[8px] font-bold text-[#004B50] sm:h-[25px] sm:px-[11px] sm:text-[9px] lg:h-[30px] lg:gap-[5px] lg:px-[14px] lg:text-[11px]">
+                            <span className="flex h-[22px] items-center gap-[3px] rounded-full bg-primary px-[9px] text-[8px] font-bold text-white sm:h-[25px] sm:px-[11px] sm:text-[9px] lg:h-[30px] lg:gap-[5px] lg:px-[14px] lg:text-[11px]">
                                 <span className="text-md">
                                     ⚡
                                 </span>
