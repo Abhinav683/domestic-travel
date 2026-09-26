@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import TravelStories from "@/components/homePage/TravelStories";
 import Memories from "@/components/Memories";
 import Gallery from "@/components/packagess/Galary";
+import EarlyBirdOfferBanner from "@/components/EarlyBirdOfferBanner";
 import TravelersReviews from "@/components/Reviews";
 import { packageData } from "@/constants/packagesData";
 import InclusionsExclusions from "@/components/packagess/InclusionExclusion";
@@ -102,7 +103,11 @@ export default function PackageDestination() {
          <section className="relative w-full">
         {/* Hero */}
         <DestinationHero destination={selectedPackage} />
+ {
+                    packageSlug === "kashmir" || packageSlug === "jaipur" || packageSlug === "manali" ?
+                        <EarlyBirdOfferBanner /> : null
 
+                }
         {/* Desktop Offer Card */}
         <div
             className="

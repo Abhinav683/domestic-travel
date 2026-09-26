@@ -35,7 +35,7 @@ const dmSerif = DM_Serif_Display({
 const earlyBirdPackages = [
     { id: 1, name: "Manali" },
     { id: 2, name: "Kashmir" },
-    { id: 3, name: "Goa" },
+    { id: 3, name: "jaipur" },
     { id: 4, name: "Darjeeling" },
 ];
 
@@ -284,8 +284,7 @@ function FeaturedCard() {
                 sizes="(max-width: 1024px) 100vw, 630px"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-r from-[#00383B]/90 via-[#00383B]/55 via-[45%] to-transparent" />
-
+ 
             {/* Destination */}
             <div className="absolute left-[14px] top-[10px] sm:left-[18px] sm:top-[14px] lg:left-[22px] lg:top-[18px]">
                 <DestinationBadge>
@@ -467,7 +466,7 @@ function SmallOfferCard({
             {/* Details */}
             <div className="flex h-[49px] w-full items-center px-[11px] sm:h-[55px] sm:px-[15px] lg:h-[60px] lg:px-[18px]">
                 {/* Duration */}
-                <div className="flex shrink-0 items-center gap-[5px] text-[7px] text-[#165E62] sm:gap-[6px] sm:text-[9px] lg:gap-[7px] lg:text-[10px]">
+                <div className="flex shrink-0 items-center gap-[5px] text-[10px] text-[#165E62] sm:gap-[6px] sm:text-[9px] lg:gap-[7px] lg:text-[13px]">
                     <CalendarDays className="h-[11px] w-[11px] sm:h-[13px] sm:w-[13px] lg:h-[15px] lg:w-[15px]" />
 
                     <span>
@@ -476,7 +475,7 @@ function SmallOfferCard({
                 </div>
 
                 {/* Location */}
-                <div className="ml-[9px] flex min-w-0 flex-1 items-center gap-[4px] text-[6px] text-whitesm:ml-[12px] sm:gap-[5px] sm:text-[8px] lg:ml-[16px] lg:gap-[6px] lg:text-[9px]">
+                <div className="ml-[9px] flex min-w-0 flex-1 items-center gap-[4px] text-[10px] text-whitesm:ml-[12px] sm:gap-[5px] sm:text-[8px] lg:ml-[16px] lg:gap-[7px] lg:text-[13px]">
                     <MapPin className="h-[9px] w-[9px] shrink-0 text-[#00666A] sm:h-[11px] sm:w-[11px] lg:h-[13px] lg:w-[13px]" />
 
                     <span className="truncate">
@@ -486,8 +485,8 @@ function SmallOfferCard({
                 </div>
 
                 {/* Price */}
-                <div className="ml-[5px] shrink-0 sm:ml-[8px] lg:ml-[10px]">
-                    <p className="text-[8px] leading-[7px] text-[#679092] sm:text-[7px] sm:leading-[8px] lg:text-[8px] lg:leading-[9px]">
+                <div className="ml-[5px] flex flex-col gap-1 shrink-0 sm:ml-[8px] lg:ml-[10px]">
+                    <p className="text-[8px] leading-[7px] text-[#679092] sm:text-[7px] sm:leading-[8px] lg:text-[11px] lg:leading-[12px]">
                         Starting from
                     </p>
 
@@ -496,7 +495,7 @@ function SmallOfferCard({
                             offer.offerPrice}
                     </p>
 
-                    <p className="text-[6px] leading-[7px] text-[#679092] sm:text-[7px] sm:leading-[8px] lg:text-[8px] lg:leading-[9px]">
+                    <p className="text-[6px] leading-[7px] text-[#679092] sm:text-[7px] sm:leading-[8px] lg:text-[11px] lg:leading-[9px]">
                         per person
                     </p>
                 </div>
@@ -528,7 +527,7 @@ export default function EarlyBirdSale() {
 
     return (
         <section className="relative w-full overflow-hidden py-5 px-2">
-            <div className="mx-auto w-full max-w-[95%]">
+            <div className="mx-auto gap-3 w-full flex flex-col max-w-[95%]">
                 {/* TOP SECTION */}
                 <div className="grid grid-cols-1 lg:grid-cols-[500px_minmax(0,1fr)]">
                     {/* LEFT */}
@@ -619,7 +618,7 @@ export default function EarlyBirdSale() {
                 </div>
 
                 {/* BOTTOM 3 CARDS */}
-                <div className="mt-5.5 grid w-full grid-cols-1 gap-3.5 md:grid-cols-3">
+                <div className="mt-5.5 grid w-full grid-cols-1 gap-6 md:grid-cols-3">
                     {earlyBirdPackages
                         .slice(1)
                         .map((item) => (

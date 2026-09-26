@@ -8,6 +8,7 @@ import TravelStories from "@/components/homePage/TravelStories";
 import Memories from "@/components/Memories";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { useEarlyBirdCountdown } from "@/hooks/useEarlyBirdCountdown";
 import Gallery from "@/components/packagess/Galary";
 import {
     packageData,
@@ -21,15 +22,21 @@ import WeatherForecast from "@/components/WheatherForcast";
 import { useRouter } from "next/navigation";
 import ThingsToDo from "@/components/ThingsToDo";
 import Image from "next/image";
+import EarlyBirdOfferBanner from "@/components/EarlyBirdOfferBanner";
 import { useState } from "react";
 import TravelersReviews from "@/components/Reviews";
- export default function PackageDestination() {
+export default function PackageDestination() {
     const pathname = usePathname();
     const router = useRouter()
     const [, locationSlug] = pathname
         .split("/")
         .filter(Boolean);
-
+    const {
+        days,
+        hours,
+        minutes,
+        seconds,
+    } = useEarlyBirdCountdown();
     // const destinationData = featuredDestination.find(
     //     (item) =>
     //         item.destination.name
@@ -47,16 +54,15 @@ import TravelersReviews from "@/components/Reviews";
     //         </main>
     //     );
     // }
+     const allPackages = [...packageData, ...InternationalPacakges];
 
-const allPackages = [...packageData, ...InternationalPacakges];
-
-const packageDestination = allPackages.find(
-    (item) =>
-        item.name
-            .toLowerCase()
-            .replace(/\s+/g, "-") ===
-        locationSlug?.toLowerCase()
-);
+    const packageDestination = allPackages.find(
+        (item) =>
+            item.name
+                .toLowerCase()
+                .replace(/\s+/g, "-") ===
+            locationSlug?.toLowerCase()
+    );
 
     if (!packageDestination) {
         return (
@@ -120,7 +126,11 @@ const packageDestination = allPackages.find(
             <section className="relative w-full">
                 {/* Hero */}
                 <DestinationHero destination={selectedPackage} />
+                {
+                    locationSlug === "kashmir" || locationSlug === "darjeeling" ?
+                        <EarlyBirdOfferBanner /> : null
 
+                }
                 {/* Desktop Offer Card */}
                 <div
                     className="
