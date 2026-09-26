@@ -605,27 +605,27 @@ export const packageData = [
             gallery: [
                 {
                     src:
-                        "https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=2400&q=90",
+                        "https://images.unsplash.com/photo-1672398760212-08ce34b88c62?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     alt: "Ayodhya temple and spiritual architecture",
                 },
                 {
                     src:
-                        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=2400&q=90",
+                        "https://images.unsplash.com/photo-1652059468424-249066e3a98f?q=80&w=776&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     alt: "Ancient Indian temple architecture",
                 },
                 {
                     src:
-                        "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2400&q=90",
+                        "https://images.unsplash.com/photo-1710429814573-7f07a792cba2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     alt: "Beautiful Indian temple surrounded by greenery",
                 },
                 {
                     src:
-                        "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=2400&q=90",
+                        "https://images.unsplash.com/photo-1766073085430-cde10e7d1c06?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     alt: "Traditional Indian temple architecture",
                 },
                 {
                     src:
-                        "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=2400&q=90",
+                        "https://images.unsplash.com/photo-1549225480-ce72840aa6c8?q=80&w=854&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     alt: "Sacred river ghats and spiritual atmosphere",
                 },
             ],
