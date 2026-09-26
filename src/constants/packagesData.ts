@@ -559,6 +559,270 @@ export const packageData = [
         ],
     },
     {
+    name: "Ayodhya",
+
+    packages: [
+        {
+            name: "Ayodhya",
+            category: "Spiritual",
+            subtitle: "The Sacred City of Lord Ram",
+
+            whyVisit: {
+                title: "Why Visit Ayodhya?",
+                description:
+                    "Experience the spiritual charm of Ayodhya, a sacred city known for its ancient temples, holy ghats, Ram Mandir and deep-rooted cultural heritage.",
+                highlights: [
+                    "Visit the magnificent Ram Mandir",
+                    "Experience the spiritual atmosphere of Saryu River Ghats",
+                    "Explore ancient temples and sacred sites",
+                    "Witness the evening Saryu Aarti",
+                ],
+            },
+
+            inclusions: [
+                "3 Nights Accommodation",
+                "Daily Breakfast",
+                "Private Airport / Railway Station Transfers",
+                "All Sightseeing as per Itinerary",
+                "English / Hindi Speaking Driver",
+                "Entry Tickets as per Itinerary",
+                "All Applicable Taxes",
+            ],
+
+            exclusions: [
+                "Flights / Train Tickets",
+                "Lunch & Dinner",
+                "Personal Expenses",
+                "Travel Insurance",
+                "Tips & Gratuities",
+                "Special Darshan / VIP Darshan Charges",
+                "Early Check-in / Late Check-out",
+            ],
+
+            heroImage:
+                "/images/packageImages/ayodhya.png",
+
+            gallery: [
+                {
+                    src:
+                        "https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=2400&q=90",
+                    alt: "Ayodhya temple and spiritual architecture",
+                },
+                {
+                    src:
+                        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=2400&q=90",
+                    alt: "Ancient Indian temple architecture",
+                },
+                {
+                    src:
+                        "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2400&q=90",
+                    alt: "Beautiful Indian temple surrounded by greenery",
+                },
+                {
+                    src:
+                        "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=2400&q=90",
+                    alt: "Traditional Indian temple architecture",
+                },
+                {
+                    src:
+                        "https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&w=2400&q=90",
+                    alt: "Sacred river ghats and spiritual atmosphere",
+                },
+            ],
+
+            rating: "4.8",
+            reviews: "1.8k",
+
+            location: "Ayodhya, Uttar Pradesh",
+            latitude: 26.7922,
+            longitude: 82.1998,
+
+            description:
+                "Discover the spiritual heart of Ayodhya with visits to the magnificent Ram Mandir, Hanuman Garhi, Kanak Bhawan, Saryu River Ghats and other sacred landmarks while experiencing the city's rich religious and cultural heritage.",
+
+            weather: "8°C - 40°C",
+            idealTrip: "3 - 5 Days",
+            budget: "₹10,000 - ₹25,000",
+
+            duration: "4 Days / 3 Nights",
+            startingPrice: "₹9,999",
+            originalPrice: "₹13,999",
+            offerPrice: "₹9,999",
+            saveAmount: "₹4,000",
+            discount: "29%",
+            validTill: "30 September 2026",
+            groupSize: "2 - 16 People",
+            bestTime: "October - March",
+
+            highlights: [
+                "Ram Mandir",
+                "Hanuman Garhi",
+                "Kanak Bhawan",
+                "Saryu River",
+                "Saryu Aarti",
+                "Ram Ki Paidi",
+            ],
+
+            activities: [
+                {
+                    text: "Temple Visits",
+                    icon: Landmark,
+                },
+                {
+                    text: "Saryu Aarti",
+                    icon: Flame,
+                },
+                {
+                    text: "Spiritual Walk",
+                    icon: Footprints,
+                },
+                {
+                    text: "Heritage Sightseeing",
+                    icon: Camera,
+                },
+                {
+                    text: "River Ghats",
+                    icon: Waves,
+                },
+                {
+                    text: "Local Shopping",
+                    icon: ShoppingBag,
+                },
+                {
+                    text: "Photography",
+                    icon: Camera,
+                },
+                {
+                    text: "Cultural Experience",
+                    icon: Sparkles,
+                },
+            ],
+
+            bestTimeToVisit: {
+                months: [
+                    "Oct",
+                    "Nov",
+                    "Dec",
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                ],
+
+                seasons: [
+                    {
+                        name: "Winter",
+                        months: "Nov - Feb",
+                        description:
+                            "Cool and pleasant weather makes winter an ideal time to explore Ayodhya's temples, ghats and spiritual landmarks.",
+                        icon: "winter" as const,
+                    },
+                    {
+                        name: "Summer",
+                        months: "Mar - Jun",
+                        description:
+                            "The weather becomes hot during the day, but early mornings and evenings are suitable for temple visits and sightseeing.",
+                        icon: "summer" as const,
+                    },
+                    {
+                        name: "Monsoon",
+                        months: "Jul - Sep",
+                        description:
+                            "Occasional rainfall brings relief from the summer heat and gives the city and Saryu Ghats a refreshing atmosphere.",
+                        icon: "monsoon" as const,
+                    },
+                ],
+            },
+
+            travelInfo: [
+                {
+                    label: "Nearest Airport",
+                    value: "Maharishi Valmiki International Airport, Ayodhya",
+                    icon: "airport",
+                },
+                {
+                    label: "Nearest Railway Station",
+                    value: "Ayodhya Dham Junction",
+                    icon: "railway",
+                },
+                {
+                    label: "Local Transport",
+                    value: "E-Rickshaws, Auto Rickshaws, Taxis & Local Cabs",
+                    icon: "transport",
+                },
+                {
+                    label: "Languages Spoken",
+                    value: "Hindi, Awadhi & English",
+                    icon: "language",
+                },
+                {
+                    label: "Permits Required",
+                    value: "Generally Not Required",
+                    icon: "permit",
+                },
+                {
+                    label: "Currency",
+                    value: "Indian Rupee (INR)",
+                    icon: "currency",
+                },
+            ],
+
+            packingItems: [
+                {
+                    label: "Comfortable Traditional / Casual Clothes",
+                    icon: "clothes",
+                },
+                {
+                    label: "Comfortable Walking Shoes",
+                    icon: "shoes",
+                },
+                {
+                    label: "Sunglasses & Sunscreen",
+                    icon: "sunglasses",
+                },
+                {
+                    label: "Water Bottle",
+                    icon: "powerbank",
+                },
+                {
+                    label: "Power Bank & ID Proof",
+                    icon: "powerbank",
+                },
+                {
+                    label: "Personal Medicines",
+                    icon: "medicine",
+                },
+            ],
+
+            itinerary: [
+                {
+                    day: 1,
+                    title: "Arrival in Ayodhya",
+                    description:
+                        "Arrive in Ayodhya and check into your hotel. Spend the evening exploring the sacred Saryu River Ghats and experience the beautiful Saryu Aarti before returning to the hotel.",
+                },
+                {
+                    day: 2,
+                    title: "Ram Mandir & Ayodhya Temple Tour",
+                    description:
+                        "Begin your spiritual journey with a visit to the magnificent Ram Mandir. Continue to Hanuman Garhi, Kanak Bhawan and other important temples in the historic heart of Ayodhya.",
+                },
+                {
+                    day: 3,
+                    title: "Sacred Ghats & Heritage Exploration",
+                    description:
+                        "Explore Ram Ki Paidi and the sacred ghats along the Saryu River. Visit important religious landmarks and spend time experiencing the spiritual atmosphere, local traditions and vibrant markets of Ayodhya.",
+                },
+                {
+                    day: 4,
+                    title: "Leisure & Departure",
+                    description:
+                        "Enjoy breakfast and some free time for shopping and exploring local markets. Check out from the hotel and begin your onward journey with unforgettable spiritual memories of Ayodhya.",
+                },
+            ],
+        },
+    ],
+},
+    {
         name: "Kashmir",
 
         packages: [
@@ -1672,7 +1936,7 @@ export const packageData = [
                 gallery: [
                     {
                         src:
-                            "https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=2400&q=90",
+                            "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         alt: "Snow covered Himalayan mountains in Manali",
                     },
                     {
@@ -1926,7 +2190,8 @@ export const packageData = [
                     "Tips & Gratuities",
                     "Early Check-in / Late Check-out",
                 ],
-                heroImage: "https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2?auto=format&fit=crop&w=3840&q=90",
+                heroImage:  "/images/packageImages/shimla.png",
+
                 gallery: [
                     {
                         src:

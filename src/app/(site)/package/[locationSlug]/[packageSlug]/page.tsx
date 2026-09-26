@@ -15,7 +15,7 @@ import Image from "next/image";
 import BestTimeToVisit from "@/components/packagess/BestTimeToVisit";
 import TravelInformation from "@/components/packagess/TravelInformation";
 import WeatherForecast from "@/components/WheatherForcast";
-import { useRouter } from "next/navigation";
+ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import ThingsToDo from "@/components/ThingsToDo";
 export default function PackageDestination() {

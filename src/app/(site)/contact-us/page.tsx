@@ -448,7 +448,7 @@ export default function ContactUs() {
                     </div>
 
                     {/* FAQ Grid */}
-                    <div className="grid gap-x-8 md:grid-cols-2">
+                    {/* <div className="grid gap-x-8 md:grid-cols-2">
                         <Accordion >
                             {faqs.slice(0, 3).map((faq, index) => (
                                 <AccordionItem
@@ -484,7 +484,7 @@ export default function ContactUs() {
                                 </AccordionItem>
                             ))}
                         </Accordion>
-                    </div>
+                    </div> */}
 
                     {/* FAQ Button */}
                   

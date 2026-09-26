@@ -17,10 +17,6 @@ import {
  } from "lucide-react";
 
 
-/* =========================================================
-   COMPANY
-========================================================= */
-
 const companyLinks = [
     {
         label: "About Us",
@@ -37,15 +33,8 @@ const companyLinks = [
 ];
 
 
-/* =========================================================
-   SUPPORT
-========================================================= */
-
 const supportLinks = [
-    {
-        label: "FAQs",
-        href: "/faqs",
-    },
+   
     {
         label: "Privacy Policy",
         href: "/privacy-policy",

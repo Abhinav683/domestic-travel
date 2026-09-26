@@ -17,21 +17,21 @@ import EarlyBirdSale from "@/components/packagess/EarlyBirdSale";
 const firstBanner: Banner[] = [
   {
     id: 1,
-    image: "/images/banners/banner_1.png",
+    image: "/images/banners/diwali banner.png",
     title: "Explore Incredible India",
-    redirectUrl: "/destinations/india",
+    redirectUrl: "/package/ayodhya",
   },
   {
     id: 2,
-    image: "/images/banners/banner_2.png",
+    image: "/images/banners/christmasBanner.png",
     title: "Discover New Destinations",
-    redirectUrl: "/destinations",
+    redirectUrl: "/package/himachal-pradesh/shimla",
   },
   {
     id: 3,
-    image: "/images/banners/banner_3.png",
+    image: "/images/banners/goabanner.png",
     title: "Your Next Adventure Awaits",
-    redirectUrl: "/adventure",
+    redirectUrl: "/package/goa",
   },
 ];
 const secondBanner: Banner[] = [
