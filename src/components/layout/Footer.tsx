@@ -28,7 +28,7 @@ const companyLinks = [
     },
     {
         label: "Blog",
-        href: "/blog",
+        href: "/blogs",
     },
 ];
 

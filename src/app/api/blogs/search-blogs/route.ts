@@ -145,7 +145,7 @@ export async function GET(request: NextRequest) {
         return NextResponse.json(
             {
                 success: false,
-                message: "Failed to fetch blogs",
+                message: error,
             },
             {
                 status: 500,
