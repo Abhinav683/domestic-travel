@@ -7,8 +7,8 @@ import {
     Tag
 } from "lucide-react";
 
+import { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
-
 interface BlogPageProps {
     params: Promise<{
         slug: string;
@@ -20,6 +20,11 @@ interface TocItem {
     text: string;
     level: number;
 }
+type RelatedBlog = Prisma.BlogGetPayload<{
+    include: {
+        category: true;
+    };
+}>;
 
 function stripHtml(html: string) {
     return html
@@ -377,7 +382,7 @@ export default async function BlogPage({
                             {blog.tags.length > 0 && (
                                 <div className="mt-10 border-t border-gray-200 pt-7 sm:mt-14">
                                     <div className="flex flex-wrap gap-2">
-                                        {blog.tags.map((tag) => (
+                                       {blog.tags.map((tag: string) => (
                                             <span
                                                 key={tag}
                                                 className="rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600 sm:px-4 sm:py-2 sm:text-sm"
@@ -459,7 +464,7 @@ export default async function BlogPage({
                                         </div>
 
                                         <div className="divide-y divide-gray-100">
-                                            {relatedBlogs.map((relatedBlog) => {
+                                           {relatedBlogs.map((relatedBlog: RelatedBlog) => {
                                                 const relatedDate =
                                                     relatedBlog.publishedAt
                                                         ? new Intl.DateTimeFormat(
