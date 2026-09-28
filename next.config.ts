@@ -1,11 +1,21 @@
-import type { NextConfig } from "next";
+ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
     reactCompiler: true,
 
+    outputFileTracingIncludes: {
+        "/*": [
+            "./src/generated/prisma/libquery_engine-rhel-openssl-3.0.x.so.node",
+        ],
+    },
+
+    serverExternalPackages: [
+        "@prisma/client",
+        "prisma",
+    ],
+
     async redirects() {
         return [
-            // Shimla → Christmas Offer
             {
                 source: "/package/himachal-pradesh/shimla",
                 destination: "/offers/shimla",
@@ -16,8 +26,6 @@ const nextConfig: NextConfig = {
                 destination: "/offers/shimla",
                 permanent: false,
             },
-
-            // Goa → New Year Offer
             {
                 source: "/package/goa",
                 destination: "/offers/goa",
@@ -28,8 +36,6 @@ const nextConfig: NextConfig = {
                 destination: "/offers/goa",
                 permanent: false,
             },
-
-            // Ayodhya → Diwali Offer
             {
                 source: "/package/ayodhya",
                 destination: "/offers/ayodhya",
@@ -58,3 +64,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+ 

@@ -90,7 +90,7 @@ export async function GET(request: NextRequest) {
 
         const categoryCounts =
             await Promise.all(
-                categories.map(async (item) => {
+                categories.map(async (item:any) => {
                     const count =
                         await prisma.blog.count({
                             where: {
